@@ -1,0 +1,354 @@
+:root{
+    --green:rgb(38, 198, 249);
+    --bgOgreen:rgb(114, 225, 40,0.12);
+    --bgGreen:rgba(38, 198, 249,0.12);
+    --bgOrange:rgba(253, 181, 40,0.12);
+    --bgBlue:rgba(102, 108, 255,0.12);
+    --blue:rgb(102, 108, 255);
+    --orange:rgb(253, 181, 40);
+    --red:rgb(255, 77, 73);
+    --font-grey:rgba(76, 78, 100, 0.87);
+    --font-glite:rgba(76, 78, 100, 0.6);
+    --font-gelite:rgba(76, 78, 100, 0.38);
+    --text-green:rgb(114, 225, 40);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.relative{
+    position: relative;
+}
+.absolute{
+    position: absolute;
+}
+
+/*Bootstrap my edit*/
+.Ogreen{
+    background-color: var(--bgOgreen);
+    color: var(--text-green);
+}
+.green{
+    background-color: var(--bgGreen);
+    color: var(--green);
+}
+.blue{
+    background-color: var(--bgBlue);
+    color: var(--blue);
+}
+.orange{
+    background-color: var(--bgOrange);
+    color: var(--orange);
+}
+.green-text{
+    color: var(--text-green);
+}
+.red-text{
+    color: var(--red);
+}
+
+p{
+    margin: 0;
+}
+
+h4{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+button{
+    outline: none;
+    border: 0px;
+    background-color: transparent;
+}
+
+.flex{
+    display: flex;
+}
+.flex-row{
+    flex-direction: row;
+}
+.flex-column{
+    flex-direction: column;
+}
+
+.max-screen-width{
+    max-width: 1400px;
+    width: 100%;
+}
+
+.main-screen{
+    width: 100%;
+}
+
+@media (max-width: 1200px){
+    .container{
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .inner-main-screen{
+        padding: 0 24px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container{
+        max-width: 1400px !important;
+    }
+    .inner-main-screen{
+        padding: 0 24px;
+    }
+}
+
+/*Top Nav bar*/
+
+.top-navBar{
+    padding: 0 24px;
+    min-height: 64px;
+    position: sticky;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.search-bar{
+    width: 100%;
+}
+
+.search-bar p{
+    color: rgba(76, 78, 100, 0.38)
+}
+
+.search-bar button{
+    padding: 8px;
+    margin-right: 4px;
+    margin-left: -11px;
+}
+
+.top-navBar button{
+    padding: 8px;
+    color: rgb(106, 106, 106);
+}
+
+.profile-circle{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profile-circle img{
+    width: 100%;
+}
+
+
+
+
+/*Main-screen content-css*/
+
+
+.box-css{
+    border-radius: 10px;
+    border: 1px solid rgba(128, 128, 128, 0.207);
+    padding: 20px;
+    height: 100%;
+}
+
+
+/*Salesoverview*/
+
+.salesoverview-css>*{
+    padding-right: 0;
+    width: auto;
+}
+
+.box-1 h2{
+    font-size: 1.25rem;
+    color: rgba(76, 78, 100, 0.87);
+}
+.box-1 p{
+    font-size: 0.75rem;
+    color: rgba(76, 78, 100, 0.87);
+}
+.box-1 h5{
+    font-size: 0.875rem;
+    color: rgba(76, 78, 100, 0.87);
+}
+
+@media (max-width: 600px){
+    .box-1 h2{
+        font-size: 1.125rem;
+    }
+}
+
+.fill-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 8px;
+}
+.cartoon-img{
+    margin-bottom: -20px;
+}
+
+.curved-bg-text{
+    border-radius: 16px;
+    padding: 0px 8px;
+}
+
+.box-2 p,.box-3 p{
+    font-size: 12px;
+    font-weight: 400;
+    margin-top: 5px;
+}
+
+
+/*box-4 row-2*/
+
+.box-4{
+    background-color: var(--blue);
+    color: white;
+}
+.box-4 button{
+    color: white;
+}
+.box-4 h2,.box-4 p{
+    color: white;
+}
+.box-4 h5,.box-4 span{
+    color: var(--text-green);
+}
+.box-4 img{
+    height: 200px;
+    position: absolute;
+}
+.css-1234{
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap:wrap;
+}
+.css-1235 img{
+    top: 0;
+    right: 0;
+    padding-top: 20px;
+    padding-right: 20px;
+}
+.css-1236-mb{
+    margin-bottom: 16px;
+}
+.css-1236 span{
+    width: 40px;
+    height: 30px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: rgb(90, 95, 224);
+    margin-right: 8px;
+}
+.css-1236 p{
+    font-weight: 400;
+    font-size: 12px;
+}
+
+
+/*box-5*/
+.css-1237{
+    margin-bottom: 10px;
+}
+.css-1237 span{
+    height: 24px;
+    width: 24px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 6px;
+}
+.css-1239 span{
+    margin-right: 0px;
+}
+.css-1239 p{
+    margin-right: 6px;
+}
+.css-1238{
+    font-size: 12px;
+}
+
+.box-5 .line{
+    content: '';
+    width: 1px;
+    height: 100%;
+    background-color: rgba(109, 120, 141, 0.12);
+}
+.css-vs123{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 7px;
+    margin: 6px;
+    border-radius: 50%;
+    font-size: 11px;
+    background-color: rgba(109, 120, 141, 0.12);
+}
+
+.linear-progress-css{
+    width: 100%;
+    height: 10px;
+    background-color: var(--blue);
+    border-radius: 10px;
+    overflow: hidden;
+}
+.linear-progress-css-inner{
+    display: block;
+    width: 100%;
+    height: 10px;
+    background-color: var(--orange);
+    transform: translateX(-76%);
+}
+
+/*box-6*/
+.box-6{
+    padding-bottom: 0px;
+}
+
+.box-6 h5{
+    margin-bottom: 10px;
+}
+.box-6 p{
+    margin-bottom: 5px;
+}
+
+/*box-7*/
+.css-1245 .dot{
+    width: 10px;
+    margin: 10px 0px;
+    padding: 5px;
+    height: 10px;
+    background-color: rgb(255, 77, 73);
+    border-radius: 10px;
+    box-shadow: rgba(255, 77, 73, 0.12) 0px 0px 0px 3px;
+}
+.dot-blue{
+    background-color: var(--blue) !important;
+    box-shadow: var(--bgBlue) 0px 0px 0px 3px !important;
+}
+.dot-green{
+    background-color: var(--green) !important;
+    box-shadow: var(--bgGreen) 0px 0px 0px 3px !important;
+}
+.css-1245 .line{
+    width: 1px;
+    height: 100%;
+    background-color: var(--font-gelite);
+}
+
+.box-7 h3{
+    font-size: 20px;
+}
